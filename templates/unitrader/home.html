@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniTrader - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1a73e8;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 0 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-login {
+            background-color: #1a73e8;
+            color: white;
+        }
+        .btn-login:hover {
+            background-color: #1557b0;
+        }
+        .btn-register {
+            background-color: #34a853;
+            color: white;
+        }
+        .btn-register:hover {
+            background-color: #2d8a46;
+        }
+        .btn-google {
+            background-color: white;
+            color: #757575;
+            border: 1px solid #dadce0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        .btn-google:hover {
+            background-color: #f8f9fa;
+        }
+        .btn-google img {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to UniTrader</h1>
+        <div class="buttons">
+            <a href="{% url 'signin' %}" class="btn btn-login">Login</a>
+            <a href="{% url 'signup' %}" class="btn btn-register">Register</a>
+           
+                Sign in with Google
+            </a>
+        </div>
+    </div>
+</body>
+</html>
